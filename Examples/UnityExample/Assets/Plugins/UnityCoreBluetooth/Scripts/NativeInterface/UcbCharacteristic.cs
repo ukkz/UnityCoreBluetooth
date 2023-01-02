@@ -10,7 +10,7 @@ namespace UnityCoreBluetooth.NativeInterface
         public static extern string ucb_characteristic_getUuid(IntPtr characteristic);
 
         [DllImport(ImportConfig.TargetName)]
-        public static extern string ucb_characteristic_getPropertis(IntPtr characteristic);
+        public static extern string ucb_characteristic_getProperties(IntPtr characteristic);
 
         [DllImport(ImportConfig.TargetName)]
         public static extern void ucb_characteristic_setNotify(IntPtr characteristic, bool enable);

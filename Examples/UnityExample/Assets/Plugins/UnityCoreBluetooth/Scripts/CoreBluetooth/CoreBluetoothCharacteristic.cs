@@ -21,13 +21,13 @@ namespace UnityCoreBluetooth
             }
         }
 
-        private string[] _propertis = null;
-        public string[] Propertis
+        private string[] _properties = null;
+        public string[] Properties
         {
             get
             {
-                if (_propertis == null) _propertis = NativeInterface.UcbCharacteristic.ucb_characteristic_getPropertis(nativePtr).Split(',');
-                return _propertis;
+                if (_properties == null) _properties = NativeInterface.UcbCharacteristic.ucb_characteristic_getProperties(nativePtr).Split(',');
+                return _properties;
             }
         }
 

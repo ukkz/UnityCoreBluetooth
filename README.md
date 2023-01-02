@@ -97,7 +97,7 @@ manager.OnDiscoverService((CoreBluetoothService service) =>
 manager.OnDiscoverCharacteristic((CoreBluetoothCharacteristic characteristic) =>
 {
     string uuid = characteristic.uuid;
-    string usage = characteristic.propertis[0];
+    string usage = characteristic.properties[0];
     Debug.Log("discover characteristic uuid: " + uuid + ", usage: " + usage);
     if (usage != "notify") return;
     characteristic.setNotifyValue(true);

@@ -52,7 +52,7 @@ public class SampleUser : MonoBehaviour
         {
             this.characteristic = characteristic;
             string uuid = characteristic.Uuid;
-            string[] usage = characteristic.Propertis;
+            string[] usage = characteristic.Properties;
             Debug.Log("discover characteristic uuid: " + uuid + ", usage: " + usage);
             for (int i = 0; i < usage.Length; i++)
             {

@@ -515,7 +515,7 @@ $s10Foundation4DataV10LargeSliceVyAESWcfCTf4nd_n
 ucb_characteristic_setNotify
 ucb_characteristic_write
 $s10Foundation4DataV15_RepresentationOyAESWcfC
-ucb_characteristic_getPropertis
+ucb_characteristic_getProperties
 allocate
 ucb_characteristic_getUuid
 Swift runtime failure: Unexpectedly found nil while implicitly unwrapping an Optional value

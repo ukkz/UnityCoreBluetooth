@@ -215,7 +215,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 @class CBCharacteristic;
 
-SWIFT_EXTERN char const * _Nullable ucb_characteristic_getPropertis(CBCharacteristic * _Nonnull const * _Nonnull characteristic) SWIFT_WARN_UNUSED_RESULT;
+SWIFT_EXTERN char const * _Nullable ucb_characteristic_getProperties(CBCharacteristic * _Nonnull const * _Nonnull characteristic) SWIFT_WARN_UNUSED_RESULT;
 
 
 SWIFT_EXTERN char const * _Nullable ucb_characteristic_getUuid(CBCharacteristic * _Nonnull const * _Nonnull characteristic) SWIFT_WARN_UNUSED_RESULT;

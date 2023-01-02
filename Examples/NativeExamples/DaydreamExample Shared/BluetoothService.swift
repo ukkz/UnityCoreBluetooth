@@ -40,7 +40,7 @@ class BluetoothService {
         }
         ucb_manager_shared_register_onDiscoverCharacteristic { (characteristic: UnsafePointer<CBCharacteristic>) in
             let uuid = ucb_characteristic_getUuid(characteristic).flatMap { String(cString: $0) }!
-            let usage = ucb_characteristic_getPropertis(characteristic).flatMap { String(cString: $0) }!
+            let usage = ucb_characteristic_getProperties(characteristic).flatMap { String(cString: $0) }!
             print("discovered characteristic: \(uuid), usage: \(usage)")
             if !usage.contains("notify") { return }
             BluetoothService.shared.characteristic = characteristic

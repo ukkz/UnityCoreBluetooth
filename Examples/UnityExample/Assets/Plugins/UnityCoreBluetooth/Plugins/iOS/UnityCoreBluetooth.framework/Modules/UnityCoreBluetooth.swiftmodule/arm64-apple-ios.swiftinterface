@@ -12,8 +12,8 @@ extension CoreBluetooth.CBCharacteristic {
 }
 @_cdecl("ucb_characteristic_getUuid")
 public func ucb_characteristic_getUuid(_ characteristic: Swift.UnsafePointer<CoreBluetooth.CBCharacteristic>) -> Swift.UnsafePointer<Swift.CChar>?
-@_cdecl("ucb_characteristic_getPropertis")
-public func ucb_characteristic_getPropertis(_ characteristic: Swift.UnsafePointer<CoreBluetooth.CBCharacteristic>) -> Swift.UnsafePointer<Swift.CChar>?
+@_cdecl("ucb_characteristic_getProperties")
+public func ucb_characteristic_getProperties(_ characteristic: Swift.UnsafePointer<CoreBluetooth.CBCharacteristic>) -> Swift.UnsafePointer<Swift.CChar>?
 @_cdecl("ucb_characteristic_write")
 public func ucb_characteristic_write(_ characteristic: Swift.UnsafePointer<CoreBluetooth.CBCharacteristic>, _ value: Swift.UnsafePointer<Swift.UInt8>?, _ len: Swift.CLong)
 @_cdecl("ucb_characteristic_setNotify")

@@ -20,8 +20,8 @@ public func ucb_characteristic_getUuid(_ characteristic: UnsafePointer<CBCharact
     return UnsafePointer(ptr)
 }
 
-@_cdecl("ucb_characteristic_getPropertis")
-public func ucb_characteristic_getPropertis(_ characteristic: UnsafePointer<CBCharacteristic>) -> UnsafePointer<CChar>? {
+@_cdecl("ucb_characteristic_getProperties")
+public func ucb_characteristic_getProperties(_ characteristic: UnsafePointer<CBCharacteristic>) -> UnsafePointer<CChar>? {
     let characteristic = Unmanaged<CBCharacteristic>.fromOpaque(characteristic).takeUnretainedValue()
     let nsStr = characteristic.propertyString as NSString
     let str = nsStr.utf8String!
